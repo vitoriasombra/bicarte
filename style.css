@@ -5,6 +5,7 @@
     text-decoration: none;
     color: #111111;
     font-family: sans-serif;
+    box-sizing: border-box;
 }
 
 header {
@@ -20,7 +21,9 @@ header {
         align-items: center;
 
         a {
+            display: inline-block;
             color:#ffffff;
+            padding: 16px 0;
             font-size: 18 px;
             text-transform: capitalize;
             letter-spacing: 1px;
@@ -34,6 +37,7 @@ header {
         
         span {
             a {
+                padding: 0;
                 font-size: 32px;
                 font-weight: 700;
                 text-transform: uppercase;
@@ -48,3 +52,62 @@ header {
     }
     
 }
+main {
+    section {
+        background-color: #111111;
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        height: 585px;
+
+        .call-action {
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            height: 700px;
+            padding-bottom: 200px;
+        }
+        div {
+            width: 560px;
+
+            h1 {
+                color: #ffffff;
+                font-size: 64px;
+                margin-bottom: 32px;
+                span {
+                    color: #ffbf00;
+                }
+            }
+
+            p{
+                color: #b2b2b2;
+                font-size: 24px;
+                line-height: 32px;
+            }
+
+            button {
+                display: inline-block;
+                padding: 16px 32px;
+                width: fit-content;
+                font-size: 18px;
+                font-weight: 600;
+                text-transform: uppercase;
+                background: linear-gradient(#ffbf00, #f2a50c);
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                transition: 200ms;
+
+                &:hover{
+                    background: linear-gradient(#ffb60d, #e59317);
+                }
+            }
+
+            img {
+                width: 100%;
+                border-radius: 4px;
+            }
+        }
+    }
+}
+
